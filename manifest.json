@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": ["https://www.opovo.com.br/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "name": "Extrair OPOVO",
+  "description": "Extensão que mostra o conteúdo bloqueado pelo site do jornal o povo",
+  "author": "Emerson Vieira",
+  "browser_action": {
+    "default_title": "Extrair OPOVO",
+    "default_icon": "icon.png"
+  }
+}
